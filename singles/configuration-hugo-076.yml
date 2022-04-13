@@ -1,0 +1,101 @@
+file: config.yml
+key: configHugo076
+title: Hugo 0.76 Configuration
+fields:
+
+  - key: title
+    title: Title
+    type: strings
+
+  - key: baseURL
+    title: BaseURL
+    type: string
+
+  - key: permalinks
+    title: Permalinks
+    groupdata: true
+    type: section
+    fields:
+      - key: posts
+        title: Posts
+        type: string
+        tip: /:year/:month/:title/
+
+  - key: markup
+    title: Markup
+    groupdata: true
+    type: section
+    fields:
+      - key: goldmark
+        title: Goldmark
+        groupdata: true
+        type: section
+        fields:
+
+        - key: extensions
+          title: Extensions
+          groupdata: true
+          type: section
+          fields:
+            - key: definitionList
+              type: boolean
+              title: definitionList
+            - key: footnote
+              title: footnote
+              type: boolean
+            - key: linkify
+              title: linkify
+              type: boolean
+            - key: linkifyProtocol
+              tile: linkifyProtocol
+              type: string
+            - key: strikethrough
+              title: strikethrough
+              type: boolean
+            - key: table
+              title: table
+              type: boolean
+            - key: taskList
+              title: taskList
+              type: boolean
+            - key: typographer
+              title: typographer
+              type: boolean
+
+        - key: parser
+          title: Parser
+          groupdata: true
+          type: section
+          fields:
+            - key: attribute
+              type: section
+              title: attribute
+              groupdata: true
+              fields:
+                - key: block
+                  type: boolean
+                  title: block
+                - key: title
+                  type: boolean
+                  title: title
+            - key: autoHeadingID
+              title: autoHeadingID
+              type: boolean
+            - key: autoHeadingIDType
+              title: autoHeadingIDType
+              type: string
+
+        - key: renderer
+          title: Renderer
+          groupdata: true
+          type: section
+          fields:
+            - key: hardWraps
+              title: hardWraps
+              type: boolean
+            - key: unsafe
+              title: unsafe
+              type: boolean
+            - key: xhtml
+              title: xhtml
+              type: boolean
