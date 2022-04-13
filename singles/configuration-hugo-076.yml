@@ -5,7 +5,7 @@ fields:
 
   - key: title
     title: Title
-    type: strings
+    type: string
 
   - key: baseURL
     title: BaseURL
@@ -47,7 +47,7 @@ fields:
               title: linkify
               type: boolean
             - key: linkifyProtocol
-              tile: linkifyProtocol
+              title: linkifyProtocol
               type: string
             - key: strikethrough
               title: strikethrough
