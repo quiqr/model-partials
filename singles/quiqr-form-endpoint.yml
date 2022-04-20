@@ -1,0 +1,27 @@
+file: quiqr/forms/default.yml
+title: Default Form
+fields:
+
+  - key: subject
+    type: string
+
+  - key: from
+    type: string
+
+  - key: to
+    type: string
+
+  - key: senders_email_field
+    type: string
+
+  - key: reply_to_sender
+    type: boolean
+
+  - key: redirect_to
+    type: string
+
+  - key: antispam
+    type: select
+    options:
+      - text: slide
+        value: slide
