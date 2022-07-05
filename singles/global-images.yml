@@ -9,6 +9,7 @@ fields:
       - svg
       - png
       - jpg
+      - jpeg
       - gif
     fields:
       - key: thumb
